@@ -1,0 +1,6 @@
+/Users/zacharykampmann/Coursework/SWENG 421/Code/Labs/Lab 7/Lab 7/bin/Debug/Lab_7.exe
+/Users/zacharykampmann/Coursework/SWENG 421/Code/Labs/Lab 7/Lab 7/bin/Debug/Lab_7.pdb
+/Users/zacharykampmann/Coursework/SWENG 421/Code/Labs/Lab 7/Lab 7/obj/Debug/Lab 7.csprojAssemblyReference.cache
+/Users/zacharykampmann/Coursework/SWENG 421/Code/Labs/Lab 7/Lab 7/obj/Debug/Lab 7.csproj.CoreCompileInputs.cache
+/Users/zacharykampmann/Coursework/SWENG 421/Code/Labs/Lab 7/Lab 7/obj/Debug/Lab_7.exe
+/Users/zacharykampmann/Coursework/SWENG 421/Code/Labs/Lab 7/Lab 7/obj/Debug/Lab_7.pdb
