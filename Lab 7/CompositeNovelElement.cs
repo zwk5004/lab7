@@ -5,7 +5,9 @@ namespace Lab_7
 {
     public abstract class CompositeNovelElement : NovelElementIF
     {
-        protected List<NovelElementIF> elements;
+        protected List<NovelElementIF> elements = new List<NovelElementIF>();
+
+        public abstract void add(NovelElementIF novel);
 
         public void save()
         {

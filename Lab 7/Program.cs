@@ -13,26 +13,29 @@ namespace Lab_7
             Character character3 = new Character("E");
             Character character4 = new Character("N");
             Character character5 = new Character("G");
-            List<NovelElementIF> characters1 = new List<NovelElementIF>();
-            characters1.Add(character1);
-            characters1.Add(character2);
-            characters1.Add(character3);
-            characters1.Add(character4);
-            characters1.Add(character5);
-            LineOfText lineOfText1 = new LineOfText(characters1);
-            Column column = new Column(new List<NovelElementIF>() {lineOfText1});
+            LineOfText lineOfText1 = new LineOfText();
+            lineOfText1.add(character1);
+            lineOfText1.add(character2);
+            lineOfText1.add(character3);
+            lineOfText1.add(character4);
+            lineOfText1.add(character5);
+            
+            Column column = new Column();
+            column.add(lineOfText1);
             novelElements.Add(column);
 
             Character character6 = new Character("4");
             Character character7 = new Character("2");
             Character character8 = new Character("1");
-            List<NovelElementIF> characters2 = new List<NovelElementIF>();
-            characters2.Add(character6);
-            characters2.Add(character7);
-            characters2.Add(character8);
-            LineOfText lineOfText2 = new LineOfText(characters2);
-            Column column2 = new Column(new List<NovelElementIF>() {lineOfText2});
-            Frame frame = new Frame(new List<NovelElementIF>() {column2});
+            LineOfText lineOfText2 = new LineOfText();
+            lineOfText2.add(character6);
+            lineOfText2.add(character7);
+            lineOfText2.add(character8);
+            lineOfText2.add(new LineOfText());
+            Column column2 = new Column();
+            column2.add(lineOfText2);
+            Frame frame = new Frame();
+            frame.add(column2);
             novelElements.Add(frame);
 
             Novel novel = new Novel(novelElements);

@@ -1,12 +1,18 @@
+using System;
 using System.Collections.Generic;
 
 namespace Lab_7
 {
     public class Frame : CompositeNovelElement
     {
-        public Frame(List<NovelElementIF> elements)
+        public override void add(NovelElementIF novel)
         {
-            base.elements = elements;
+            if (novel.GetType().IsInstanceOfType(typeof(Frame)))
+            {
+                throw new Exception("Frame cannot contain Frame");
+            }
+
+            base.elements.Add(novel);
         }
     }
 }

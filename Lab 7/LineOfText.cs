@@ -5,9 +5,14 @@ namespace Lab_7
 {
     public class LineOfText : CompositeNovelElement
     {
-        public LineOfText(List<NovelElementIF> elements)
+        public override void add(NovelElementIF novel)
         {
-            base.elements = elements;
+            if (novel.GetType() == typeof(LineOfText))
+            {
+                throw new Exception("LineOfText cannot contain LineOfText");
+            }
+
+            base.elements.Add(novel);
         }
     }
 }

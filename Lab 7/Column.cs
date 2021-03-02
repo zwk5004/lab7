@@ -1,12 +1,18 @@
+using System;
 using System.Collections.Generic;
 
 namespace Lab_7
 {
     public class Column : CompositeNovelElement
     {
-        public Column(List<NovelElementIF> elements)
+        public override void add(NovelElementIF novel)
         {
-            base.elements = elements;
+            if (novel.GetType().IsInstanceOfType(typeof(Column)))
+            {
+                throw new Exception("Column cannot contain Column");
+            }
+
+            base.elements.Add(novel);
         }
     }
 }
